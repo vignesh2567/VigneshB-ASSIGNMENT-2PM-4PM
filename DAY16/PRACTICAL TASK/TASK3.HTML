@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example JS</title>
+    <style>
+        button{
+            height: 500px;
+            width: 500px;
+            background-color: black;
+            font-size: 100px;
+            color: red;
+            text-align: center;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>BUTTON USING JS</h1>
+    <BUTTON id="b">CLICK ME</BUTTON>
+    <script>
+        const btn=document.getElementById("b");
+        btn.addEventListener("click",()=>{
+            alert("button has been clicked")
+        })
+    </script>
+</body>
+</html>
