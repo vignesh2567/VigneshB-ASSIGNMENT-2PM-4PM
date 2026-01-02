@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Pricing Cards</title>
+    <style>
+      .pricing {
+        display: flex;
+        gap: 20px;
+        max-width: 900px;
+        margin: auto;
+      }
+      .card {
+        flex: 1;
+        padding: 20px;
+        border: 1px solid black;
+        text-align: center;
+      }
+      .price {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+      .card button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: none;
+        background: black;
+        color: white;
+        cursor: pointer;
+      }
+      @media (max-width: 600px) {
+        .pricing {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Pricing Plans</h2>
+    <div class="pricing">
+      <div class="card">
+        <h3>Basic</h3>
+        <p class="price">$10/month</p>
+        <p>Basic features</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <h3>Pro</h3>
+        <p class="price">$20/month</p>
+        <p>Most popular plan</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <h3>Premium</h3>
+        <p class="price">$30/month</p>
+        <p>All features included</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </body>
+</html>

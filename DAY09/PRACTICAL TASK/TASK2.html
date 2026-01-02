@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        height: 60px;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        background-color: antiquewhite;
+      }
+      .logo {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .nav {
+        display: flex;
+        gap: 30px;
+        margin: 0 auto;
+      }
+      .nav a {
+        text-decoration: none;
+        color: #333;
+      }
+      .cta {
+        padding: 8px 16px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">MyLogo</div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+      <button class="cta">Sign Up</button>
+    </header>
+  </body>
+</html>
