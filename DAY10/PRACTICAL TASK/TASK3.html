@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banner with Overlay</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .banner {
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+      }
+      .banner h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+      .banner p {
+        font-size: 18px;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="banner">
+      <div>
+        <h1>Welcome to My Website</h1>
+        <p>Clean design with image and gradient overlay</p>
+      </div>
+    </section>
+  </body>
+</html>

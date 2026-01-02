@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Navbar</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+        background: #111;
+        padding: 15px 30px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+      .content {
+        padding: 20px;
+        line-height: 1.6;
+      }
+      .box {
+        height: 600px;
+        background: #f2f2f2;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">MySite</div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="box">Scroll down </div>
+      <div class="box">More content</div>
+      <div class="box">Even more content</div>
+    </div>
+  </body>
+</html>

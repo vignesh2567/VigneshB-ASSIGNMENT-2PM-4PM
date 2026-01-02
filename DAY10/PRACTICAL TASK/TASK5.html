@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification Badge</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      .icon {
+        position: relative;
+        font-size: 40px;
+      }
+      .badge {
+        position: absolute;
+        top: -5px;
+        right: -8px;
+        background: red;
+        color: white;
+        font-size: 12px;
+        padding: 3px 7px;
+        border-radius: 50%;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="icon">
+      🔔NOTIFICATION
+      <span class="badge">3</span>
+    </div>
+  </body>
+</html>

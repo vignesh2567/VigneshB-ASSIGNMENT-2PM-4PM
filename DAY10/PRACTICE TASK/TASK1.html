@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Color Formats</title>
+    <style>
+      body {
+        display: flex;
+        gap: 20px;
+        padding: 40px;
+        font-family: Arial, sans-serif;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+      }
+      .box1 {
+        background-color: red;
+      }
+      .box2 {
+        background-color: #3498db;
+      }
+      .box3 {
+        background-color: rgb(46, 204, 113);
+      }
+      .box4 {
+        background-color: hsl(270, 70%, 60%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">Named</div>
+    <div class="box box2">HEX</div>
+    <div class="box box3">RGB</div>
+    <div class="box box4">HSL</div>
+  </body>
+</html>
