@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2 Column Grid</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        height: 100vh;
+      }
+      .left {
+        background: #e0e0e0;
+        padding: 20px;
+      }
+      .right {
+        background: #cfcfcf;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="left">Left Column (1fr)</div>
+      <div class="right">Right Column (2fr)</div>
+    </div>
+  </body>
+</html>

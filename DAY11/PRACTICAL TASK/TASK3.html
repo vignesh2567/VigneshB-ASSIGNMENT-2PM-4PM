@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Cards</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .card-row {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+      }
+      .card {
+        flex: 1;
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      @media (max-width: 768px) {
+        .card-row {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+  <div class="card-row">
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>Build responsive and modern websites using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="card">
+      <h3>UI / UX Design</h3>
+      <p>Create clean, user-friendly designs focused on usability.</p>
+    </div>
+    <div class="card">
+      <h3>Cloud Solutions</h3>
+      <p>Deploy and manage scalable applications using cloud platforms.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline Block Navbar</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        background-color: #222;
+        text-align: center;
+      }
+      .navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .navbar ul li {
+        display: inline-block;
+      }
+      .navbar ul li a {
+        display: inline-block;
+        padding: 15px 25px;
+        color: white;
+        text-decoration: none;
+      }
+      .navbar ul li a:hover {
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

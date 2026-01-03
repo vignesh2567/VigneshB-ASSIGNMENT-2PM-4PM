@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Cards (Float Layout)</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: blueviolet;
+      }
+      .product-list {
+        width: 90%;
+        margin: 20px auto;
+      }
+      .card {
+        float: left;
+        width: 30%;
+        margin: 1.5%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        text-align: center;
+        box-sizing: border-box;
+        background-color: aliceblue;
+      }
+      .card button {
+        padding: 8px 12px;
+        border: none;
+        background: black;
+        color: white;
+        cursor: pointer;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product-list clearfix">
+      <div class="card">
+        <h3>Product 1</h3>
+        <p>₹499</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <h3>Product 2</h3>
+        <p>₹799</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <h3>Product 3</h3>
+        <p>₹999</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </body>
+</html>
