@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Cards</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        padding: 40px;
+      }
+      .pricing {
+        display: flex;
+        gap: 20px;
+      }
+      .card {
+        background: white;
+        padding: 20px;
+        flex: 1;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .price {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      .card ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+      }
+      .card button {
+        padding: 10px 20px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      @media (max-width: 768px) {
+        .pricing {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="pricing">
+      <div class="card">
+        <h2>Basic</h2>
+        <p class="price">₹199 / month</p>
+        <ul>
+          <li>1 User</li>
+          <li>5 Projects</li>
+          <li>Email Support</li>
+        </ul>
+        <button>Get Started</button>
+      </div>
+
+      <div class="card">
+        <h2>Pro</h2>
+        <p class="price">₹499 / month</p>
+        <ul>
+          <li>5 Users</li>
+          <li>20 Projects</li>
+          <li>Priority Support</li>
+        </ul>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="card">
+        <h2>Premium</h2>
+        <p class="price">₹999 / month</p>
+        <ul>
+          <li>Unlimited Users</li>
+          <li>Unlimited Projects</li>
+          <li>24/7 Support</li>
+        </ul>
+        <button>Subscribe</button>
+      </div>
+    </section>
+  </body>
+</html>

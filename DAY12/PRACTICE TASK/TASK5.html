@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Overflow Fix</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+    .container {
+      display: flex;
+      width: 400px;
+      border: 2px solid black;
+    }
+    .box {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid gray;
+      min-width: 0; 
+    }
+    .text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+<body>
+  <h3>Flex Text Overflow Fixed</h3>
+  <div class="container">
+    <div class="box">
+      <div class="text">
+        This is a very very very long text that would normally overflow outside the flex item
+      </div>
+    </div>
+  </div>
+</body>
+</html>

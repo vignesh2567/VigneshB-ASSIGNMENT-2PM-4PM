@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+      }
+      .dashboard {
+        display: grid;
+        grid-template-areas:
+          "sidebar topbar"
+          "sidebar stats"
+          "sidebar content";
+        grid-template-columns: 220px 1fr;
+        grid-template-rows: 60px 120px 1fr;
+        height: 100vh;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background: #222;
+        color: white;
+        padding: 20px;
+      }
+      .topbar {
+        grid-area: topbar;
+        background: #333;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .stats {
+        grid-area: stats;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 15px;
+        background: #f4f4f4;
+      }
+      .stat {
+        background: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 6px;
+      }
+      .content {
+        grid-area: content;
+        padding: 20px;
+        background: #fafafa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">Sidebar</aside>
+      <header class="topbar">Topbar</header>
+      <section class="stats">
+        <div class="stat">Users</div>
+        <div class="stat">Sales</div>
+        <div class="stat">Revenue</div>
+      </section>
+      <main class="content">Main Content Area</main>
+    </div>
+  </body>
+</html>

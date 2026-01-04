@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Grid</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+      }
+      .layout {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "left   right"
+          "footer footer";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 60px 1fr 50px;
+        height: 100vh;
+      }
+      .header {
+        grid-area: header;
+        background: #333;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .left {
+        grid-area: left;
+        background: #f4f4f4;
+        padding: 20px;
+      }
+      .right {
+        grid-area: right;
+        background: #eaeaea;
+        padding: 20px;
+      }
+      .footer {
+        grid-area: footer;
+        background: #333;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="header">Header</header>
+      <aside class="left">Left Section</aside>
+      <main class="right">Right Section</main>
+      <footer class="footer">Footer</footer>
+    </div>
+  </body>
+</html>

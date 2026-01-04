@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Grid Row</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .photo-row {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        overflow-x: auto;
+      }
+      .photo {
+        height: 160px;
+        flex: 0 0 auto;
+      }
+      .photo img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="photo-row">
+      <div class="photo">
+        <img src="./ca1.png" alt="Photo 1" />
+      </div>
+      <div class="photo">
+        <img src="./ca2.png" alt="Photo 2" />
+      </div>
+      <div class="photo">
+        <img src="./CPA3.jpg" alt="Photo 3" />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services Section</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+      }
+      .services {
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .services h2 {
+        margin-bottom: 30px;
+      }
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+      }
+      .card h3 {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Building fast and responsive websites.</p>
+        </div>
+
+        <div class="card">
+          <h3>App Development</h3>
+          <p>Modern mobile and web applications.</p>
+        </div>
+
+        <div class="card">
+          <h3>UI / UX Design</h3>
+          <p>Clean and user-friendly designs.</p>
+        </div>
+
+        <div class="card">
+          <h3>SEO Optimization</h3>
+          <p>Improve search engine visibility.</p>
+        </div>
+      </div>
+    </section>
+    <hr>
+  </body>
+</html>

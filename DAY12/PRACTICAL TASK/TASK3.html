@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        height: 100vh;
+      }
+      .chat-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      .messages {
+        display: flex;
+        flex-direction: column-reverse;
+        flex: 1;
+        padding: 10px;
+        overflow-y: auto;
+        background: #fff;
+      }
+      .msg {
+        background: #e1f5fe;
+        padding: 8px 12px;
+        margin: 5px 0;
+        border-radius: 8px;
+        width: fit-content;
+      }
+      .input-area {
+        display: flex;
+        padding: 10px;
+        background: #ddd;
+      }
+      .input-area input {
+        flex: 1;
+        padding: 8px;
+      }
+      .input-area button {
+        padding: 8px 15px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="messages">
+        <div class="msg">Hello 👋</div>
+        <div class="msg">How are you?</div>
+        <div class="msg">This is a chat layout</div>
+        <div class="msg">Newest message at bottom</div>
+      </div>
+      <div class="input-area">
+        <input type="text" placeholder="Type a message" />
+        <button>Send</button>
+      </div>
+    </div>
+  </body>
+</html>
