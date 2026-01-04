@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+        background: orangered;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      @media (max-width: 600px) {
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </body>
+</html>

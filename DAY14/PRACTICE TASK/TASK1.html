@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background: blue;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        margin: 50px auto;
+      }
+      @media (max-width: 600px) {
+        .box {
+          background: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Resize the screen</div>
+  </body>
+</html>

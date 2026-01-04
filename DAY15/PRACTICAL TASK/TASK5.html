@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+        background: #111827;
+        color: white;
+      }
+      .nav a {
+        margin-left: 20px;
+        color: white;
+        text-decoration: none;
+      }
+      .hero {
+        padding: 80px 10%;
+        text-align: center;
+        background: #4f46e5;
+        color: white;
+      }
+      .projects {
+        padding: 60px 10%;
+        text-align: center;
+      }
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+      }
+      .project-card {
+        padding: 40px;
+        background: #e5e7eb;
+        border-radius: 8px;
+      }
+      .about {
+        padding: 60px 10%;
+        background: #f3f4f6;
+        text-align: center;
+      }
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #111827;
+        color: white;
+      }
+      @media (max-width: 900px) {
+        .project-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .header {
+          padding: 20px 6%;
+        }
+      }
+      @media (max-width: 600px) {
+        .header {
+          flex-direction: column;
+          gap: 15px;
+        }
+        .nav a {
+          margin: 0 10px;
+        }
+        .project-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero {
+          padding: 60px 6%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">MyPortfolio</h1>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <h2>Hello, I’m a Web Developer</h2>
+      <p>I build responsive and modern websites.</p>
+    </section>
+    <section class="projects">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">Project 1</div>
+        <div class="project-card">Project 2</div>
+        <div class="project-card">Project 3</div>
+      </div>
+    </section>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate developer focused on creating clean and responsive
+        designs.
+      </p>
+    </section>
+    <footer class="footer">
+      <p>© 2026 MyPortfolio</p>
+    </footer>
+  </body>
+</html>
