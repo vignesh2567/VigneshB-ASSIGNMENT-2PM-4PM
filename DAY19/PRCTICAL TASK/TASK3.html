@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marks to Grade</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #dfa9ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: #fffefe;
+      padding: 20px;
+      border-radius: 8px;
+      width: 280px;
+      text-align: center;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+    }
+    button {
+      background: #6f42c1;
+      color: white;
+      cursor: pointer;
+    }
+    #marks{
+        box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Marks to Grade Converter</h2>
+    <input type="number" id="marks" placeholder="Enter marks">
+    <button onclick="convertGrade()">Get Grade</button>
+    <p id="result"></p>
+  </div>
+  <script>
+    function getGrade(marks) {
+      if (marks >= 90) return "A+";
+      else if (marks >= 80) return "A";
+      else if (marks >= 70) return "B";
+      else if (marks >= 60) return "C";
+      else if (marks >= 50) return "D";
+      else return "Fail";
+    }
+    function convertGrade() {
+      let marks = document.getElementById("marks").value;
+      if (marks === "" || marks < 0 || marks > 100) {
+        document.getElementById("result").innerText =
+          "Please enter valid marks (0–100)";
+        return;
+      }
+      let grade = getGrade(marks); 
+      document.getElementById("result").innerText =
+        "Your Grade is: " + grade;
+    }
+  </script>
+</body>
+</html>
