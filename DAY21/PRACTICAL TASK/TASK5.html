@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <style>
+      .bg {
+        background-color: black;
+        width: 200px;
+      }
+      h2 {
+        color: lightskyblue;
+      }
+      ul {
+        color: lightgoldenrodyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <h2>Products</h2>
+      <ul id="productList"></ul>
+    </div>
+
+    <script>
+      let products = ["Laptop", "Mobile", "Headphones", "Keyboard", "Mouse"];
+
+      let list = document.getElementById("productList");
+
+      products.forEach(function (product) {
+        let li = document.createElement("li");
+        li.textContent = product;
+        list.appendChild(li);
+      });
+    </script>
+  </body>
+</html>
