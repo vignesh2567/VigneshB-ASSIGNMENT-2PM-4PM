@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="parent" style="padding:50px;background:lightblue;">
+    Parent
+    <div id="child" style="padding:50px;background:lightgreen;">
+        Child
+    </div>
+</div>
+
+<script>
+
+document.getElementById("parent").addEventListener("click", () => {
+    console.log("Parent Click - Bubbling");
+});
+
+document.getElementById("child").addEventListener("click", () => {
+    console.log("Child Click - Bubbling");
+});
+
+
+document.getElementById("parent").addEventListener("click", () => {
+    console.log("Parent Click - Capturing");
+}, true);
+
+document.getElementById("child").addEventListener("click", () => {
+    console.log("Child Click - Capturing");
+}, true);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="name" placeholder="Name"><br><br>
+<input type="email" id="email" placeholder="Email"><br><br>
+
+<h3>Preview:</h3>
+<p id="preview"></p>
+
+<script>
+let name = document.getElementById("name");
+let email = document.getElementById("email");
+
+function updatePreview() {
+    document.getElementById("preview").innerText =
+        "Name: " + name.value + " | Email: " + email.value;
+}
+
+name.addEventListener("input", updatePreview);
+email.addEventListener("input", updatePreview);
+</script>
+
+</body>
+</html>
