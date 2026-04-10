@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>innerHTML Example</title>
+  </head>
+  <body>
+    <button onclick="showText()">Show Text</button>
+    <div id="content"></div>
+
+    <script>
+      function showText() {
+        document.getElementById("content").innerHTML =
+          "<b>Bold Text</b> and <i>Italic Text</i>";
+      }
+    </script>
+  </body>
+</html>
